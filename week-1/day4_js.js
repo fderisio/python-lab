@@ -19,5 +19,26 @@ function Podcast(title, author, year, month){
     this.month = month
 }
 
+Podcast.prototype = Object.create(Book.prototype) // hereda los metodos del prototype del objeto
 
+// ES6
+class Car {
+    constructor(brand, model, year){
+        this.brand = brand
+        this.model = model
+        this.year = year
+    }
+    getBrand(){ // method in the prototype
+        return `Brand of the car is {$this.brand}`
+    }
+}
+const car1 = new Car ("BMW", "i8", 2018)
+
+// Inheritance ES6
+class eCar extends Car{
+    constructor(brand, model, year, battery){
+        super(brand, model, year)
+        this.baterry = battery
+    }
+}
 

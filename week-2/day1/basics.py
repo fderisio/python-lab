@@ -23,9 +23,14 @@ def divide(num1, num2):
     return num1 / num2
 
 
-print(type(divide(num1=10, num2=5)))
-print(int(divide(10, 5)))
-print(str(divide(10, 5)))
+nums = {
+    'num1': 2,
+    'num2': 4,
+}
+print(multiply_with_params(**nums))  # convierte el objeto en parametros
+print(type(divide(num1=10, num2=5)))  # keyword argument
+print(int(divide(10, 5)))  # positional argument
+print(str(divide(10, num2=5)))  # positional argument siempre adelante del keyword
 print(float(100))
 
 

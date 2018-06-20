@@ -22,9 +22,9 @@ print(calculate_square_even(list1))
 def find_numbers(min, max):
     new_list = list(x for x in range(min, max+1))
     return list(filter(lambda x: x % 7 == 0 and x % 5 != 0, new_list))
-print(find_numbers(1,35))
 
-######
+
+print(find_numbers(1,35))
 
 
 def increase(quantity, price):
@@ -58,7 +58,7 @@ orders = [
         'price_per_item': 51,
     },
 ]
-print(compute_totals(orders))
+# print(compute_totals(orders))
 
 
 def generator(num):
@@ -89,7 +89,7 @@ def bmi_calculator():
     bmi = round(weight / ((height / 100) ** 2), 2)
     print('Your BMI is:', bmi, bmi_result(float(bmi)))
     return bmi
-bmi_calculator()
+# bmi_calculator()
 
 
 def help_menu():

@@ -1,0 +1,6 @@
+name: my_project
+dependencies:
+  - pandas (for columns and rows)
+  - numpy
+  - pip:
+    - django==2.0.6

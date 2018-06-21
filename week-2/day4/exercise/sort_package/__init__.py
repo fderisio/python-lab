@@ -1,7 +1,7 @@
-from sort_package import bubble_sort
-from sort_package import selection_sort
-from sort_package import insertion_sort
-from sort_package import quick_sort
+from .bubble_sort import bubble_sort
+from .selection_sort import selection_sort
+from .insertion_sort import insertion_sort
+from .quick_sort import quick_sort
 
 list1 = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 bubble_sort(list1)
